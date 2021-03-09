@@ -43,7 +43,7 @@ import com.android.settingslib.DeviceInfoUtils;
 
 public class SecurityPatchLevelPreferenceController extends BasePreferenceController {
 
-    private static final String CAF_TAG = "ro.caf.tag";
+    private static final String CAF_TAG = "ro.caf.revision.tag";
     private static final String TAG = "SecurityPatchCtrl";
     private static final Uri INTENT_URI_DATA = Uri.parse(
             "https://www.codeaurora.org/");
