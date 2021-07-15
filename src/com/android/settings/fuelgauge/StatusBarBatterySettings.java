@@ -79,9 +79,6 @@ public class StatusBarBatterySettings extends SettingsPreferenceFragment
         mBatteryPercent.setValue(String.valueOf(mBatteryPercentValue));
         mBatteryPercent.setSummary(mBatteryPercent.getEntry());
         mBatteryPercent.setOnPreferenceChangeListener(this);
-
-        updateBatteryOptions(batterystyle, mBatteryPercentValue);
-
         mBatteryPercent.setEnabled(
                 batterystyle != BATTERY_STYLE_TEXT && batterystyle != BATTERY_STYLE_HIDDEN);
     }
